@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60vw; /* Increased width */
+  min-height: 90vh; /* Full height */
+  border-radius: 8px;
+  border: solid #f4f4f4;
+  background: linear-gradient(to right, #ff9f43, #ffcc80);
+  padding: 30px;
+  gap: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 90vw;
+}
+
+li {
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+.delete-task {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  flex-shrink: 0;
+  width: auto;
+  min-width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-task:hover {
+  background-color: #cc0000;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: auto;
+  width: 25%;
+  text-align: center;
+  background: #cf2424;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.logout-button:hover {
+  background: #a31e1e;
+  cursor: pointer;
+}
